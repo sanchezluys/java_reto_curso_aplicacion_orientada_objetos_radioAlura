@@ -19,4 +19,12 @@ public class Cancion extends Audio{
     public void setGenero(String genero) {
         this.genero = genero;
     }
+
+    public void muestraCancion(){
+        System.out.println("** CANCION REGISTRADA **");
+        System.out.println("Titulo: "+this.getTitulo());
+        System.out.println("Autor: "+this.getAutor());
+        System.out.println("** ****************** **");
+
+    }
 }

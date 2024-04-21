@@ -19,4 +19,10 @@ public class Podcast extends Audio{
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
+
+    public void muestraPodcast(){
+        System.out.println("*** PODCAST REGISTRADO ***");
+        System.out.println("Titulo: "+this.getTitulo());
+        System.out.println("Presentador(a): "+this.getPresentador());
+    }
 }
