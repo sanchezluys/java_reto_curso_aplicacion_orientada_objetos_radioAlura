@@ -25,4 +25,15 @@ public class Podcast extends Audio{
         System.out.println("Titulo: "+this.getTitulo());
         System.out.println("Presentador(a): "+this.getPresentador());
     }
+
+    @Override
+    public int getClasificacion() {
+        if(getTotalReproducciones() >= 2000 ){
+            return 9;
+        }
+        else
+        {
+            return 2;
+        }
+    }
 }

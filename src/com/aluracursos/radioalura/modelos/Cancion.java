@@ -25,6 +25,16 @@ public class Cancion extends Audio{
         System.out.println("Titulo: "+this.getTitulo());
         System.out.println("Autor: "+this.getAutor());
         System.out.println("** ****************** **");
+    }
 
+    @Override
+    public int getClasificacion() {
+        if(getTotalMeGusta() > 5000){
+            return 8;
+        }
+        else
+        {
+            return 4;
+        }
     }
 }
