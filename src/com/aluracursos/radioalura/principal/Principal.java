@@ -18,7 +18,15 @@ public class Principal {
         miPodcast.setPresentador("Gabriela");
         miPodcast.setTitulo("Cafe.Tech");
         miPodcast.muestraPodcast();
-
-
+        //** darle me gusta a la cancion
+        for (int i = 0; i < 500 ; i++) {
+            miCancion.meGusta();
+        }
+        for (int i = 0; i < 5000; i++) {
+            miCancion.reproduce();
+        }
+        //***
+        System.out.println("Total me gustas de "+miCancion.getTitulo()+" son: "+miCancion.getTotalMeGusta());
+        System.out.println("Total de reproducciones de "+miCancion.getTitulo()+" son "+miCancion.getTotalReproducciones());
     }
 }
